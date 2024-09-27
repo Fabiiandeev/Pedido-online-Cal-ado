@@ -16,3 +16,15 @@ shrink_btn.addEventListener("click", () =>{
     }, 500);
 });
 
+search.addEventListener("click", () =>{
+    document.body.classList.remove(shrink);
+    search.lastElementChild.focus();
+});
+
+function moveActiveTab(){
+    let topPosition = activeIndex * 58 + 2.5;
+
+    if (activeIndex > 3){
+        topPosition += shortcuts.clientHeight;
+    }
+}

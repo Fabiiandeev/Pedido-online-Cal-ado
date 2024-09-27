@@ -211,6 +211,44 @@ nav:houver .shrink -btn {
 .sidebar-links a .link{
     transition: opacity 0.3s 0.2s, color 0.3s ;
 }
+
+.sidebar-links a.active i:first-child{
+    opacity: 0;
+}
+
+.sidebar-links a.active i:last-child{
+    opacity: 1;
+}
+
+.active-tab{
+    width: 100%;
+    height: 53px;
+    background-color: var(--main-color-dark);
+    border-radius: 10px;
+    position: absolute;
+    top: 2.5px;
+    left: 0;
+    transition: top 0.3s;
+    
+}
+
+.sidebar-links h4{
+    position: relative;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 0.8rem;
+    color: var(--text-color)
+    letter-spacing 0.5px;
+    height: 45px;
+    line-height: 45px;
+    transition: opacity 0.3s 0.2s, height 0.5s 0s;
+}
+
+.sidebar-footer{
+    position: relative;
+    margin-top: auto;
+}
 .hide{
     transition: opacity 0.3s 0.2s;
 }
