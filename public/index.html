@@ -4,101 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ns Sistema - Pedido Online</title>
-    
-    <!--========== REMIXICONS ========-->
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 
+    <!--========== BOXICONS ========-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!---========= CSS ==========-->
-    <link rel="stylesheet" 
-    href="style/index.css">
+    <link rel="stylesheet" href="style/index.css">
 
-    <!---====== HEADER ======= -->
-    <header class = "header" id="header">
-        <div class="header__container">
-            <a href="header__logo">
-                <i class="ri-search-line"></i>
-                <span>Search</span>
-            </a>
+</head>
 
-            <button 
-            class="header_toggle" 
-            id="header-togle">
-            <i class="ri-menu-line"></i>
-            </button>
-        </div>
-    </header>
+<body>
 
     <!--=========== SIDEBAR ==========-->
-    <nav class="sidebar" id="sodebar">
-        <div class="sidebar__container">
-            <div class="sidebar__user">
-                <div class="sidebar__img">
-                    <img src="assets/imgperfil.png" alt="image">
-                    
-                </div>
+    <nav>
+        <div class="sidebar-top">
+            <span class="shrink-btn">
+                <i class='bx bx-chevron-left'></i>
 
-                <div class="sidebar__info">
-                    <h3>Empresa :</h3>
-                    <span>E-mail :</span>
-                </div>
+            </span>
 
-            </div>
+            <img src="" class="logo">
+            <h3 class="hide"> Ns Sistemas</h3>
+            
 
-            <div class="sidebar__content">
-                   <div>
-                    <h3 class="sidebar__title">Menu</h3>
-
-                    <div class="sidebar__list">
-                        <div class="sidebar__list">
-                            <a href="" class="sidebar__link">
-                                <i class="ri-user-add-fill"></i>
-                                <span> Cadastro</span>
-
-                            </a>
-
-                            <div class="sidebar__link">
-                                <a href="usuario.html" class="sidebar__link">Usuário</a>
-                                <a href="cadastroCliente.html" class="sidebar__link">Cliente</a>
-                                <a href="representantes.html" class="sidebar__link" >Representante</a>
-                
-                            </div>
-
-
-                        </div>
-                        
-                        <div class="sidebar__list">
-                            <a href="" class="sidebar__link">
-                                <i class="ri-footprint-fill"></i>
-                                <span>Calçado</span>
-                            </a>
-                        </div>
-
-                                                
-                        
-                        <div class="sidebar__list">
-                            <a href="" class="sidebar__link">
-                                <i class="ri-shopping-bag-fill"></i>
-                                <span>Pedido</span>
-                            </a>
-    
-
-
-
-
-                    </div>
-                   </div> 
-            </div>
         </div>
 
+        <div class="search">
+            <i class='bx bx-search-alt-2'></i>
+            <input type="text" class="hide" placeholder=" Search ...">
+        </div>
+
+        <div class="sidebar-links">
+            <ul>
+                <div class="active-tab"></div>
+                <li class="tooltip-element" data-tooltip=""0>
+                    <a href="#" class="active" data-active="0">
+                        <div class="icon">
+                            <i class='bx bxs-user-plus'></i>
+                            
+                
+                        </div>
+                        <span class=" link hide"> Clientes</span>
+                    </a>
+                </li>
+
+                <li class="tooltip-element" data-tooltip ="1">
+                    <a href="#" data-active="1">
+                        <div class="icon">
+                            <i class='bx bxs-face'></i>
+                        </div>
+                        <span class=" link hide"> Representate</span>
+                    </a>
+                </li>
+
+                <li class="tooltip-element " data-tooltip="2">
+                    <a href="#" data-active="2">
+                        <div class="icon">
+                            <i class='bx bxs-building'></i>
+                        </div>
+                        <span>Numeração</span>
+                    </a>
+                </li>
+
+                <li class="tooltip-element" data-tooltip="3">
+                    <a href="#" data-active="3">
+                        <div class="icon">
+                            <i class='bx bx-aperture'></i>
+
+                        </div>
+                        <span>Calçados</span>
+                    </a>
+
+                </li>
+
+                <li class="tooltip-element" data-tooltip="4">
+                    <a href="#" data-active="4">
+                        <div class="icon">
+                            <i class='bx bx-package'></i>
+                        </div>
+                        <span>Pedido</span>
+                    </a>
+
+                </li>
+
+                <li class="tooltip-element" data-tooltip="5">
+                    <a href="#" data-active="5">
+                        <div class="icon">
+                            <i class='bx bxs-store'></i>
+                        </div>
+                        <span>Vendas</span>
+                    </a>
+                </li>
+
+                
+            </ul>
+        </div>
         
     </nav>
 
-
+    <main>
+        <h1>DashBoard</h1>
+        <p class="copyright">
+            &copy;2024 - <span> Ns Sistemas</span> All Rights Reserved.
+        </p>
+    </main>
+    <!--=============== MAIN ===============-->
+ 
 
     <script src="js/script.js"></script>
-</head>
-<body>
-    
 </body>
 </html>
