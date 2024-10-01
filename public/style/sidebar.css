@@ -9,7 +9,7 @@
 }
 
 :root {
-    --main-color: #3d5af1;
+    --main-color: #1822bb;
     --main-color-dark:#3651d4;
     --main-color-light:#5872f5;
     --text-color:#cfcde7;
@@ -39,10 +39,10 @@ nav{
     top: 0;
     left: 0;
     height: 100vh;
-    background-color: hsl(228, 85%, 63%);
+    background-color: #2533ff;
     width: 16rem;
     padding: 1.8rem 0.85rem;
-    color: #fafeff;
+    color: #eaf3ff;
     display: flex;
     flex-direction: column;
     transition: width 0.5s ease-in-out;
@@ -248,6 +248,57 @@ nav:houver .shrink -btn {
 .sidebar-footer{
     position: relative;
     margin-top: auto;
+}
+
+.sidebar-footer{
+    position: relative;
+    margin-top: auto;
+}
+
+.account:hover{
+    color: #fff;
+}
+.admin-user{
+    display: flex;
+
+}
+.tooltip{
+    background-color: var(--main-color);
+    position: absolute;
+    right: -1.2rem;
+    top: 0;
+    transform: translateX(100%) translateY(-50%);
+    padding: 0 0.8rem;
+    font-size: 0.85rem;
+    display: none;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 30px;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tooltip span{
+    grid-column: 1 /2;
+    grid-row: 1/2;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+.tooltip sapn.show{
+    opacity: 1;
+}
+
+.tooltip-element:hover ~ .tooltip{
+    opacity: 1;
+    pointer-events: all;
 }
 .hide{
     transition: opacity 0.3s 0.2s;
